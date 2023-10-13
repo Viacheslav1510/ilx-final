@@ -50,7 +50,7 @@ function Register() {
       async function SignUp() {
         try {
           const response = await Axios.post(
-            "http://ilx-final-4a1e6f3ac2ff.herokuapp.com/auth/users/",
+            "https://ilx-final-4a1e6f3ac2ff.herokuapp.com/auth/users/",
             {
               username: state.usernameValue,
               email: state.emailValue,

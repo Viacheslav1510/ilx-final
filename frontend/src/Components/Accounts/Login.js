@@ -92,7 +92,7 @@ const Login = () => {
         try {
           await axios
             .post(
-              "http://ilx-final-4a1e6f3ac2ff.herokuapp.com/auth/token/login/",
+              "https://ilx-final-4a1e6f3ac2ff.herokuapp.com/auth/token/login/",
               {
                 email: state.emailValue,
                 password: state.passwordValue,
@@ -133,7 +133,7 @@ const Login = () => {
         try {
           await axios
             .get(
-              "http://ilx-final-4a1e6f3ac2ff.herokuapp.com/auth/users/me/",
+              "https://ilx-final-4a1e6f3ac2ff.herokuapp.com/auth/users/me/",
               {
                 headers: { Authorization: "Token ".concat(state.token) },
               },

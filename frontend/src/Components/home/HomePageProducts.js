@@ -13,7 +13,7 @@ function HomePageProducts() {
     async function GetAllProducts() {
       try {
         const response = await Axios.get(
-          "http://ilx-final-4a1e6f3ac2ff.herokuapp.com/api/products/",
+          "https://ilx-final-4a1e6f3ac2ff.herokuapp.com/api/products/",
           { cancelToken: source.token }
         );
         setAllProducts(response.data);

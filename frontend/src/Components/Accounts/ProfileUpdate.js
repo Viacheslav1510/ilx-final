@@ -16,7 +16,7 @@ import {
 import userImage from "../Assets/images/userimage.webp";
 
 // const baseUrl = "https://8000-dee68-ilx-m1qv6b8vv9s.ws-eu104.gitpod.io/api";
-const baseUrl = "http://ilx-final-4a1e6f3ac2ff.herokuapp.com/api";
+const baseUrl = "https://ilx-final-4a1e6f3ac2ff.herokuapp.com/api";
 
 const ProfileUpdate = (props) => {
   const initialState = {
@@ -507,7 +507,7 @@ const ProfileUpdate = (props) => {
 
         try {
           const response = await axios.patch(
-            `http://ilx-final-4a1e6f3ac2ff.herokuapp.com/api/profiles/${GlobalState.userId}/update/`,
+            `https://ilx-final-4a1e6f3ac2ff.herokuapp.com/api/profiles/${GlobalState.userId}/update/`,
             formData
           );
           console.log(response.data);

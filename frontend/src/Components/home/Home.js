@@ -46,7 +46,7 @@ function Home() {
     async function GetAllCategories() {
       try {
         const response = await Axios.get(
-          "http://ilx-final-4a1e6f3ac2ff.herokuapp.com/api/categories/",
+          "https://ilx-final-4a1e6f3ac2ff.herokuapp.com/api/categories/",
           { cancelToken: source.token }
         );
         setAllCategories(response.data);

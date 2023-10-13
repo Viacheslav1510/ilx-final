@@ -14,7 +14,7 @@ import userImage from "../Assets/images/userimage.webp";
 import ProfileUpdate from "./ProfileUpdate";
 
 // const baseUrl = "https://8000-dee68-ilx-m1qv6b8vv9s.ws-eu104.gitpod.io/api";
-const baseUrl = "http://ilx-final-4a1e6f3ac2ff.herokuapp.com/api";
+const baseUrl = "https://ilx-final-4a1e6f3ac2ff.herokuapp.com/api";
 
 const Profile = () => {
   const initialState = {
@@ -67,7 +67,7 @@ const Profile = () => {
     async function GetUserProfile() {
       try {
         const response = await axios.get(
-          `http://ilx-final-4a1e6f3ac2ff.herokuapp.com/api/profiles/${GlobalState.userId}/`
+          `https://ilx-final-4a1e6f3ac2ff.herokuapp.com/api/profiles/${GlobalState.userId}/`
         );
         console.log(response.data);
         dispatch({ type: "catchUserProfileInfo", profileObj: response.data });

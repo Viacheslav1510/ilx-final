@@ -20,7 +20,7 @@ import StateContext from "../Contexts/StateContext";
 import NoImage from "../Assets/images/no-image.jpg";
 // import { Label } from "@material-ui/icons";
 
-const baseUrl = "http://ilx-final-4a1e6f3ac2ff.herokuapp.com/api";
+const baseUrl = "https://ilx-final-4a1e6f3ac2ff.herokuapp.com/api";
 //const baseUrl = "https://ilx-3022db9b1ed6.herokuapp.com/api";
 
 const AddProduct = () => {
