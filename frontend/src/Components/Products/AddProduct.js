@@ -156,7 +156,7 @@ const AddProduct = () => {
     async function GetProfileInfo() {
       try {
         const response = await axios.get(
-          `https://ilx-3022db9b1ed6.herokuapp.com/api/profiles/${GlobalState.userId}/`
+          `https://ilx-final-4a1e6f3ac2ff.herokuapp.com/api/profiles/${GlobalState.userId}/`
         );
         console.log(response.data);
         console.log(typeof parseInt(GlobalState.userId), GlobalState.userId);
@@ -290,7 +290,7 @@ const AddProduct = () => {
 
   const showSubmitBtn = () => {
     if (
-      GlobalState.userIsLogged &&
+      GlobalState.userIsLoggedIn &&
       state.userProfile.city !== null &&
       state.userProfile.county !== null &&
       state.userProfile.phoneNumber !== "" &&
@@ -315,7 +315,7 @@ const AddProduct = () => {
         </Button>
       );
     } else if (
-      GlobalState.userIsLogged &&
+      GlobalState.userIsLoggedIn &&
       (state.userProfile.city === null ||
         state.userProfile.city === "" ||
         state.userProfile.county === null ||
@@ -340,7 +340,7 @@ const AddProduct = () => {
           Complete you profile to add application
         </Button>
       );
-    } else if (!GlobalState.userIsLogged) {
+    } else if (!GlobalState.userIsLoggedIn) {
       return (
         <Button
           variant="outlined"
@@ -503,7 +503,7 @@ const AddProduct = () => {
                         color: "feb55f",
                       },
                     }}
-                    disabled={!GlobalState.userIsLogged}
+                    disabled={!GlobalState.userIsLoggedIn}
                     style={textFieldType}
                   >
                     Upload Images (Max 5)
