@@ -92,7 +92,7 @@ const Login = () => {
         try {
           await axios
             .post(
-              "http://127.0.0.1:8000/auth/token/login/",
+              "http://ilx-final-4a1e6f3ac2ff.herokuapp.com/auth/token/login/",
               {
                 email: state.emailValue,
                 password: state.passwordValue,
@@ -133,7 +133,7 @@ const Login = () => {
         try {
           await axios
             .get(
-              "http://127.0.0.1:8000/auth/users/me/",
+              "http://ilx-final-4a1e6f3ac2ff.herokuapp.com/auth/users/me/",
               {
                 headers: { Authorization: "Token ".concat(state.token) },
               },

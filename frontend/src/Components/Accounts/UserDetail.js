@@ -18,7 +18,7 @@ import userImage from "../Assets/images/userimage.webp";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 // const baseUrl = "https://8000-dee68-ilx-m1qv6b8vv9s.ws-eu104.gitpod.io/api";
-const baseUrl = "http://127.0.0.1:8000/api";
+const baseUrl = "http://ilx-final-4a1e6f3ac2ff.herokuapp.com/api";
 
 const UserDetail = () => {
   const initialState = {

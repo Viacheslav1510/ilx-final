@@ -17,7 +17,7 @@ import searchBtn from "../Assets/images/search.png";
 import Product from "../Products/ProductsPageComponent";
 
 // const baseUrl = "http://127.0.0.1:8000/api";
-const baseUrl = "http://127.0.0.1:8000/api";
+const baseUrl = "http://ilx-final-4a1e6f3ac2ff.herokuapp.com/api";
 
 const SearchItem = () => {
   const [products, setProducts] = useState([]);

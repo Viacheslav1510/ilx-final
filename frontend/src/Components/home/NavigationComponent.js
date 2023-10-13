@@ -45,7 +45,7 @@ function NavigationBar() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/auth/token/logout/",
+        "http://ilx-final-4a1e6f3ac2ff.herokuapp.com/auth/token/logout/",
         GlobalState.userToken,
         { headers: { Authorization: "Token ".concat(GlobalState.userToken) } }
       );

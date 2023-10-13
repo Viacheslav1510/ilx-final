@@ -33,7 +33,7 @@ import Swal from "sweetalert2";
 
 import ProductUpdate from "./ProductUpdate";
 
-const baseUrl = "http://127.0.0.1:8000/api";
+const baseUrl = "http://ilx-final-4a1e6f3ac2ff.herokuapp.com/api";
 
 const ProductDetail = () => {
   const counties = [
